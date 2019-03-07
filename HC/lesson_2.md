@@ -1,37 +1,38 @@
 
 
-#Arithmetic and Logical Operators in Python
+# Arithmetic and Logical Operators in Python
 ## by Jonah Robinson 3-7-2019
 
-##Arithmetic Operators
-### arithmetic operators perform basic arithmetic operations on numbers or variables:
+## Arithmetic Operators
+### purpose: arithmetic operators perform basic arithmetic operations on numbers or variables:
 ### here are some operators, there function, and an example
 
 1. +
-operator for addition
-1 + 2
+..* operator for addition
+..* 1 + 2
 
 2. -
-operator for subtraction
-5 - 3
+..* operator for subtraction
+..* 5 - 3
 
 3. *
-operator for multiplication
-6 * 4
+..* operator for multiplication
+..* 6 * 4
 
 4. **
 operator for using exponents
  5 ** 2
 
 5. /
-operator for using division
-16/3
+..* operator for using division
+..* 16/3
 
 6. %
- modulus operators(returns the remainder of a division problem)
+ ..* modulus operators(returns the remainder of a division problem)
  5%2
 
-##Logical operators:
+## Logical operators:
+### Purpose: logical operators perform evaluations based on boolean logic(combinations of or, and, not)
 
 operator
 
@@ -56,32 +57,32 @@ Example: Not(X and Y)
 
 
 1. >
-Example: y > x
-Meaning: y is greater than x
+..* Example: y > x
+..* Meaning: y is greater than x
 
 2. <
-Example: y < x
-y is less than x
+..* Example: y < x
+..* y is less than x
 
 3.  ==
-Example: y==x
-Meaning: y is equal to x
+..* Example: y==x
+..* Meaning: y is equal to x
 
 4. !=
-Example: y != x
-Meaning y doesn't equal x
+..* Example: y != x
+..* Meaning y doesn't equal x
 
 5. >=
-Example: y >= x
-Meaning y is greater than or equal to x
+..* Example: y >= x
+..* Meaning y is greater than or equal to x
 
 6. <=
-Example: y <= x
-meaning: y is less than or equal to x
+..* Example: y <= x
+..* meaning: y is less than or equal to x
 
 ##Assignment operators:
 ###Purpose: to assign values to variables
 
 1. =
-Example x = 4
+..* Example x = 4
 meaning: assigns the value of right of the equal sign to the variable left of the equal assign, in this case evaluating the right hand side as 4, then assigning that value to x, making x equal to 4
