@@ -7,6 +7,7 @@
 ### purpose: arithmetic operators perform basic arithmetic operations on numbers or variables:
 ### here are some operators, there function, and an example
 
+```python
 1. +
 ..* operator for addition
 ..* 1 + 2
@@ -30,12 +31,13 @@ operator for using exponents
 6. %
  ..* modulus operators(returns the remainder of a division problem)
  5%2
+```
 
 ## Logical operators:
 ### Purpose: logical operators perform evaluations based on boolean logic(combinations of or, and, not)
 
 operator
-
+```python
 1. AND
 True if both operands are true
 
@@ -50,12 +52,13 @@ Negates the and operator, if and value is true not changes it to false
 if and value is false not negates it to true and returns true
 
 Example: Not(X and Y)
+```
 
-##Comparison operators
+## Comparison operators
 ### purpose: to compare values, this checks whether a comparison evaluates as
 ### true of false
 
-
+```python
 1. >
 ..* Example: y > x
 ..* Meaning: y is greater than x
@@ -80,9 +83,13 @@ Example: Not(X and Y)
 ..* Example: y <= x
 ..* meaning: y is less than or equal to x
 
+```
+
 ##Assignment operators:
 ###Purpose: to assign values to variables
 
+```python
 1. =
 ..* Example x = 4
 meaning: assigns the value of right of the equal sign to the variable left of the equal assign, in this case evaluating the right hand side as 4, then assigning that value to x, making x equal to 4
+```
