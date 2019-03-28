@@ -26,7 +26,7 @@ class Drop:
         #height needs to be defined along with width
         if (self.y > height):
             self.y = random.randint(-200,-100)
-            self.yspeed = interp(self.z,[0,20][4,10])
+            self.yspeed = interp(self.z,[0,20],[4,10])
 
     def show(self):
         thick = interp(self.z,[0,20],[1,3])
