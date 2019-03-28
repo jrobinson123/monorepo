@@ -1,40 +1,41 @@
 
 
-# size(640, 360);
+
+
 import pygame
-import purple_rain
+import purple_rain_x_and_y_reversed as pr
 import constants
 
-# I copied the width and height from Daniel Shiffman's video
-#The underscores are probably not nessasary
+
 width = constants.width
 height = constants.height
 
+
 drops = []
-
-# # loop for initiating drops
-# for i in range(10):
-#     drops.append(purple_rain.Drop())
-
 
 pygame.init()
 
 screen = pygame.display.set_mode((width,height))
 
+#the variable drops_created represent the amount of drops that are going to be created
+#it should be noted that drops_created is still dependent on width even though the movement is reversed
+# I could have it go right to left instead of left to right
+drops_created = int((width/640) * 500)
+print(drops_created)
+
 
 # loop for initiating drops
-for i in range(500):
-    drops.append(purple_rain.Drop(screen))
+for i in range(drops_created):
+    drops.append(pr.Drop(screen))
 
 
 clock = pygame.time.Clock()
-
 game = True
+
 while game:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game = False
-
 
     screen.fill((0,0,0))
     for drop in drops:

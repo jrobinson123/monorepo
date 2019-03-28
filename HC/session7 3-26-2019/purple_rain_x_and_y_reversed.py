@@ -17,23 +17,23 @@ class Drop:
     def __init__(self,screen):
         # width is the value of the width of the screen
 
-        self.x = random.randint(x_range_start,x_range_end)
+        self.y = random.randint(x_range_start,x_range_end)
         #self.x = random.randint(0,width)
-        self.y = random.randint(-500,-50)
+        self.x = random.randint(-500,-50)
         self.z = random.randint(0,20)
         self.drop_len = interp(self.z,[0,20],[10,20])
-        self.yspeed = interp(self.z,[0,20],[1,20])
+        self.xspeed = interp(self.z,[0,20],[1,20])
         self.screen = screen
 
     def fall(self):
-        self.y += self.yspeed
+        self.x += self.xspeed
         grav = interp(self.z,[0,20],[0,0.2])
-        self.yspeed += grav
+        self.xspeed += grav
 
         #height needs to be defined along with width
-        if (self.y > height):
-            self.y = random.randint(-200,-100)
-            self.yspeed = interp(self.z,[0,20],[4,10])
+        if (self.x > width):
+            self.x = random.randint(-200,-100)
+            self.xspeed = interp(self.z,[0,20],[4,10])
 
     def show(self):
         thick = interp(self.z,[0,20],[1,3])
