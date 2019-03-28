@@ -9,14 +9,14 @@ height = 360
 pygame.init()
 
 class Drop:
-    def __init__(self,screen_):
+    def __init__(self,screen):
         # width is the value of the width of the screen
         self.x = random.randint(0,width)
         self.y = random.randint(-500,-50)
         self.z = random.randint(0,20)
         self.drop_len = interp(self.z,[0,20],[10,20])
         self.yspeed = interp(self.z,[0,20],[1,20])
-        self.screen_ = screen_
+        self.screen = screen
 
     def fall(self):
         self.y += self.yspeed
@@ -34,8 +34,8 @@ class Drop:
         # stroke(138,43,226)
         # line(x,y,x,y+dro_len)
         purple_color = (151, 88, 239)
-        screen = pygame.display.set_mode((width,height)
-        pygame.draw.line(self.screen_,purple_color,[self.x,self.y],[self.x,self.y + self.drop_len],1)
+        #screen = pygame.display.set_mode((width,height))
+        pygame.draw.line(self.screen,purple_color,[self.x,self.y],[self.x,self.y + self.drop_len],int(thick))
 
         # look up how to make a line in pygame
 
